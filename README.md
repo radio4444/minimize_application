@@ -3,7 +3,7 @@
 A robust Python utility designed to improve desktop privacy and workspace organization by automatically minimizing specific application windows after a period of system inactivity.
 
 ## 🚀 Overview
-The **Idle Application Minimizer** monitors system-wide inactivity (mouse and keyboard input) and automatically hides targeted applications once a predefined idle threshold is reached. 
+The **Idle Application Minimizer** monitors system-wide inactivity (mouse and keyboard input) and automatically hides targeted applications once a user-predefined idle threshold is reached. 
 
 This project was built and optimized with the assistance of **Google AI Studio** to solve the specific challenge of targeting "Electron" apps like **Notion** and **Visual Studio Code**, which often use dynamic window titles and multiple background "ghost" processes.
 
@@ -24,7 +24,7 @@ This project was built and optimized with the assistance of **Google AI Studio**
    ```
 
 2. **Install dependencies**:
-This project uses pygetwindow, pywinauto, and psutil. You can install them all at once using the provided requirements file:
+This project uses pygetwindow, pywinauto, and psutil. You can install them all at once using the provided requirements file: [requirement.txt](https://github.com/radio4444/minimize_application/blob/main/requirement.txt)
 
 ## 🚀 Usage
 The project is split into two specialized scripts depending on your needs:
@@ -48,6 +48,3 @@ IDLE_THRESHOLD_MINUTES = 5
 CHECK_INTERVAL = 10 
 # --------------
 ```
-
-## 🧠 Development & Attribution
-This project was developed using logic and optimization provided by Google AI Studio. The AI assisted in creating the multi-stage filtering logic required to handle the complex window hierarchies of modern productivity software, ensuring that background system tasks are not accidentally affected.
